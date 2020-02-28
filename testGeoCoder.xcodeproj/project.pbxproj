@@ -14,6 +14,11 @@
 		3F2FB4AD23F6784A001A3BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F2FB4AC23F6784A001A3BD8 /* Assets.xcassets */; };
 		3F2FB4B023F6784A001A3BD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2FB4AE23F6784A001A3BD8 /* LaunchScreen.storyboard */; };
 		3F2FB4B323F6784A001A3BD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FB4B223F6784A001A3BD8 /* main.m */; };
+		3F2FB4BB23F678AD001A3BD8 /* TransportLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FB4BA23F678AD001A3BD8 /* TransportLayer.m */; };
+		3FFF2F9023FFAF3E00811037 /* GeoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF2F8F23FFAF3E00811037 /* GeoObject.m */; };
+		3FFF2F9323FFBDD600811037 /* GeoObjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF2F9223FFBDD600811037 /* GeoObjectCell.m */; };
+		3FFF2F9623FFCCB400811037 /* GeoObjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF2F9523FFCCB400811037 /* GeoObjectVC.m */; };
+		9317FED6DB894BA5ED9BF731 /* libPods-testGeoCoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A2F36F27A8EF6C5BE11D21 /* libPods-testGeoCoder.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,17 @@
 		3F2FB4AF23F6784A001A3BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F2FB4B123F6784A001A3BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F2FB4B223F6784A001A3BD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F2FB4B923F678AD001A3BD8 /* TransportLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransportLayer.h; sourceTree = "<group>"; };
+		3F2FB4BA23F678AD001A3BD8 /* TransportLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransportLayer.m; sourceTree = "<group>"; };
+		3FFF2F8E23FFAF3E00811037 /* GeoObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeoObject.h; sourceTree = "<group>"; };
+		3FFF2F8F23FFAF3E00811037 /* GeoObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoObject.m; sourceTree = "<group>"; };
+		3FFF2F9123FFBDD600811037 /* GeoObjectCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeoObjectCell.h; sourceTree = "<group>"; };
+		3FFF2F9223FFBDD600811037 /* GeoObjectCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoObjectCell.m; sourceTree = "<group>"; };
+		3FFF2F9423FFCCB400811037 /* GeoObjectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeoObjectVC.h; sourceTree = "<group>"; };
+		3FFF2F9523FFCCB400811037 /* GeoObjectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoObjectVC.m; sourceTree = "<group>"; };
+		41A2F36F27A8EF6C5BE11D21 /* libPods-testGeoCoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testGeoCoder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BC4CFCEE1677EAD4EAD836 /* Pods-testGeoCoder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testGeoCoder.release.xcconfig"; path = "Target Support Files/Pods-testGeoCoder/Pods-testGeoCoder.release.xcconfig"; sourceTree = "<group>"; };
+		F1009CF55F76792655703A4C /* Pods-testGeoCoder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testGeoCoder.debug.xcconfig"; path = "Target Support Files/Pods-testGeoCoder/Pods-testGeoCoder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9317FED6DB894BA5ED9BF731 /* libPods-testGeoCoder.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +64,8 @@
 			children = (
 				3F2FB49F23F67838001A3BD8 /* testGeoCoder */,
 				3F2FB49E23F67838001A3BD8 /* Products */,
+				E41E17A35138AADF658B260B /* Pods */,
+				7FC20271EA28535C12114616 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,13 +86,39 @@
 				3F2FB4A423F67838001A3BD8 /* SceneDelegate.m */,
 				3F2FB4A623F67838001A3BD8 /* ViewController.h */,
 				3F2FB4A723F67838001A3BD8 /* ViewController.m */,
+				3FFF2F8E23FFAF3E00811037 /* GeoObject.h */,
+				3FFF2F8F23FFAF3E00811037 /* GeoObject.m */,
+				3FFF2F9123FFBDD600811037 /* GeoObjectCell.h */,
+				3FFF2F9223FFBDD600811037 /* GeoObjectCell.m */,
 				3F2FB4A923F67838001A3BD8 /* Main.storyboard */,
+				3FFF2F9423FFCCB400811037 /* GeoObjectVC.h */,
+				3FFF2F9523FFCCB400811037 /* GeoObjectVC.m */,
+				3F2FB4B923F678AD001A3BD8 /* TransportLayer.h */,
+				3F2FB4BA23F678AD001A3BD8 /* TransportLayer.m */,
 				3F2FB4AC23F6784A001A3BD8 /* Assets.xcassets */,
 				3F2FB4AE23F6784A001A3BD8 /* LaunchScreen.storyboard */,
 				3F2FB4B123F6784A001A3BD8 /* Info.plist */,
 				3F2FB4B223F6784A001A3BD8 /* main.m */,
 			);
 			path = testGeoCoder;
+			sourceTree = "<group>";
+		};
+		7FC20271EA28535C12114616 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41A2F36F27A8EF6C5BE11D21 /* libPods-testGeoCoder.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E41E17A35138AADF658B260B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1009CF55F76792655703A4C /* Pods-testGeoCoder.debug.xcconfig */,
+				B8BC4CFCEE1677EAD4EAD836 /* Pods-testGeoCoder.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F2FB4B623F6784A001A3BD8 /* Build configuration list for PBXNativeTarget "testGeoCoder" */;
 			buildPhases = (
+				47B833C5E57FAD2FA03298A4 /* [CP] Check Pods Manifest.lock */,
 				3F2FB49923F67838001A3BD8 /* Sources */,
 				3F2FB49A23F67838001A3BD8 /* Frameworks */,
 				3F2FB49B23F67838001A3BD8 /* Resources */,
+				8E4B510D1722A9750C770621 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,13 +188,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47B833C5E57FAD2FA03298A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testGeoCoder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E4B510D1722A9750C770621 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testGeoCoder/Pods-testGeoCoder-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testGeoCoder/Pods-testGeoCoder-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testGeoCoder/Pods-testGeoCoder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F2FB49923F67838001A3BD8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F2FB4BB23F678AD001A3BD8 /* TransportLayer.m in Sources */,
 				3F2FB4A823F67838001A3BD8 /* ViewController.m in Sources */,
+				3FFF2F9023FFAF3E00811037 /* GeoObject.m in Sources */,
+				3FFF2F9623FFCCB400811037 /* GeoObjectVC.m in Sources */,
 				3F2FB4A223F67838001A3BD8 /* AppDelegate.m in Sources */,
+				3FFF2F9323FFBDD600811037 /* GeoObjectCell.m in Sources */,
 				3F2FB4B323F6784A001A3BD8 /* main.m in Sources */,
 				3F2FB4A523F67838001A3BD8 /* SceneDelegate.m in Sources */,
 			);
@@ -287,6 +380,7 @@
 		};
 		3F2FB4B723F6784A001A3BD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1009CF55F76792655703A4C /* Pods-testGeoCoder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +397,7 @@
 		};
 		3F2FB4B823F6784A001A3BD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BC4CFCEE1677EAD4EAD836 /* Pods-testGeoCoder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
